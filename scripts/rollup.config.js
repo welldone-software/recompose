@@ -86,9 +86,6 @@ export default [
       format: 'es',
     },
     external: isExternal,
-    plugins: [
-      babel(getBabelOptions({ useESModules: true })),
-      sizeSnapshot({ matchSnapshot }),
-    ],
+    plugins: [babel(getBabelOptions({ useESModules: true }))],
   },
 ]
